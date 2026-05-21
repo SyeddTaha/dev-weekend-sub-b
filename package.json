@@ -1,0 +1,11 @@
+{
+  "name": "url-risk-checker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Beginner-friendly URL risk checker using URLhaus.",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  }
+}
