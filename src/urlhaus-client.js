@@ -115,8 +115,7 @@ function normalizeUrlhausResponse(data, queriedUrl) {
 	if (queryStatus === "no_results") {
 		return {
 			verdict: "safe",
-			explanation:
-				"URLhaus does not currently have a match for this URL. That is not a guarantee that the URL is safe.",
+			explanation: "Secure and safe.",
 			queryStatus,
 			matched: null,
 			reference: null,

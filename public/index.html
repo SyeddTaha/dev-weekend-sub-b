@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>URL Risk Checker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">URLhaus malware URL lookup</p>
+        <h1>URL Risk Checker</h1>
+        <p class="lede">Paste a URL to see whether URLhaus knows it as safe, suspicious, malicious, or unknown.</p>
+      </section>
+
+      <section class="panel">
+        <form id="check-form" class="form">
+          <label class="label" for="url-input">URL</label>
+          <div class="field-row">
+            <input id="url-input" name="url" type="url" placeholder="https://example.com/path" autocomplete="off" spellcheck="false" />
+            <button id="submit-button" type="submit">Check URL</button>
+          </div>
+          <p class="helper">Only http and https URLs are accepted. Results are looked up server-side through URLhaus.</p>
+        </form>
+
+        <div id="status-area" class="status" aria-live="polite"></div>
+        <div id="result-area" class="result-area"></div>
+      </section>
+
+      <section class="panel history-panel">
+        <div class="section-heading">
+          <h2>Recent lookups</h2>
+          <button id="clear-history" class="link-button" type="button">Clear</button>
+        </div>
+        <div id="history-area" class="history"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
